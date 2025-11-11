@@ -1,0 +1,24 @@
+menu:
+  image: logo-um.svg
+  # title: Ecomare
+  # subtitle: Ecología y Conservación Marina
+  items:
+  - label: Noticias
+    link: /#noticias
+  - label: Acerca del grupo
+    link: /#grupo
+  - label: Proyectos
+    link: /#proyectos
+  - label: Contratos
+    link: /#contratos
+  - label: Publicaciones
+    link: /#publicaciones
+footer:
+  md: |
+    [![Universidad de Murcia](logo-um.svg)](/)
+
+    ::place:: Avda. Teniente Flomesta, 5 · 30003 · Murcia
+
+    - ::phone:: [+34 868 88 3000](tel:+34868883000) (Centralita)
+    - ::phone:: [+34 868 88 8888](tel:+34868888888) (Información)
+    {.list-inline}

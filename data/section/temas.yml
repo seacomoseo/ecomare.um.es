@@ -1,0 +1,138 @@
+name: Temas
+box:
+  cols: 2
+  gap: 5
+  gap_vs: 2
+boxes:
+- id: noticias
+  title: Noticias
+  box:
+    gap: 1
+  boxes:
+  - md: |
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMECResearch&tabs=timeline&width=328&height=1080&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="498"
+        height="1080"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+- title: Secciones
+  box:
+    cols: 2
+    card: y
+    rate: 1
+    pd: 0.5
+  boxes:
+  - label: Grupo
+    link: '#grupo'
+    image: grupo.webp
+  - label: Proyectos
+    link: '#proyectos'
+    image: proyectos.webp
+  - label: Contratos
+    link: '#contratos'
+    image: contratos.webp
+  - label: Publicaciones
+    link: '#publicaciones'
+    image: publicaciones.webp
+
+modal:
+  size: lg
+modals:
+
+- id: grupo
+  title: Acerca del grupo
+  subtitle: Miembros
+  box:
+    gap_vs: 2
+  boxes:
+  - boxes:
+    - title: Actuales
+    - box:
+        cols: 3
+        color: white
+        inset: y
+        ratio: 1
+        hs: 5
+      params:
+      - from: grupo.actuales
+        to: boxes
+    - box:
+        cols: 3
+        color: white
+        hs: 6
+      params:
+      - from: grupo.actuales_simples
+        to: boxes
+  - boxes:
+    - title: Visitantes
+    - box:
+        cols: 3
+        color: white
+        inset: y
+        ratio: 1
+        hs: 5
+      params:
+      - from: grupo.visitantes
+        to: boxes
+  - boxes:
+    - title: Anteriores
+    - box:
+        cols: 3
+        color: white
+        inset: y
+        ratio: 1
+        hs: 5
+      params:
+      - from: grupo.anteriores
+        to: boxes
+
+- id: proyectos
+  title: Proyectos
+  md: '[[Financiaciones]](https://portalinvestigacion.um.es/financiaciones?grupoId=31934)'
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 16/9
+    hs: 5
+    label: Ver más
+  params:
+  - from: proyectos
+    to: boxes
+
+- id: contratos
+  title: Contratos
+  subtitle: con empresas y administraciones
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 1/1
+    hs: 5
+    label: Ver más
+  params:
+  - from: contratos
+    to: boxes
+
+- id: publicaciones
+  title: Publicaciones
+  subtitle: Tesis doctorales, de máster y trabajos fin de carrera dirigidos
+  md: '[[Ver Publicaciones]](https://portalinvestigacion.um.es/grupos/31934/publicaciones)'
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 1/1
+    hs: 5
+    label: Ver más
+  params:
+  - from: publicaciones
+    to: boxes

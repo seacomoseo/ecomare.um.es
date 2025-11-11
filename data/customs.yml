@@ -1,0 +1,169 @@
+
+- types: [ single ]
+  pages: [ _home ]
+  name: header
+  label: Cabecera
+  widget: object
+  sub:
+  - var: box_image_src
+  - var: box_title
+  - var: box_md
+
+- types: [ single ]
+  pages: [ _home ]
+  name: mision
+  label: Misión
+  widget: object
+  sub:
+  - var: box_title
+  - var: box_md
+
+- types: [ single ]
+  pages: [ _home ]
+  name: grupo
+  label: Grupo
+  widget: object
+  sub:
+  - name: actuales
+    label: Actuales Destacados
+    widget: list
+    sub:
+    - var: box_image_src
+    - var: box_title
+    - var: box_subtitle
+    - var: box_md
+  - name: actuales_simples
+    label: Actuales Simples
+    widget: list
+    sub:
+    - var: box_title
+    - var: box_subtitle
+    - var: box_md
+  - name: visitantes
+    label: Visitantes
+    widget: list
+    sub:
+    - var: box_title
+    - var: box_subtitle
+    - var: box_md
+  - name: anteriores
+    label: Anteriores
+    widget: list
+    sub:
+    - var: box_title
+    - var: box_subtitle
+    - var: box_md
+
+- types: [ single ]
+  pages: [ _home ]
+  name: proyectos
+  label: Proyectos
+  widget: list
+  sub:
+  - var: box_image_src
+  - var: box_title
+  - var: box_subtitle
+  - var: box_md
+  - name: tags
+    label: Etiquetas
+    widget: list
+    sub:
+    - name: icon
+      label: Icono
+      widget: select
+      options:
+      - label: Fecha
+        value: calendar_today
+      - label: Ubicación
+        value: place
+      - label: Dinero
+        value: monetization_on
+      - label: Persona
+        value: person
+      - label: Enlace
+        value: link
+      - label: Tipo
+        value: sell
+    - var: box_tags_label
+
+- types: [ single ]
+  pages: [ _home ]
+  name: contratos
+  label: Contratos
+  widget: list
+  sub:
+  - var: box_image_src
+  - var: box_title
+  - var: box_subtitle
+  - var: box_md
+  - name: tags
+    label: Etiquetas
+    widget: list
+    sub:
+    - name: icon
+      label: Icono
+      widget: select
+      options:
+      - label: Fecha
+        value: calendar_today
+      - label: Ubicación
+        value: place
+      - label: Dinero
+        value: monetization_on
+      - label: Persona
+        value: person
+      - label: Enlace
+        value: link
+      - label: Tipo
+        value: sell
+    - var: box_tags_label
+
+- types: [ single ]
+  pages: [ _home ]
+  name: publicaciones
+  label: Publicaciones
+  widget: list
+  sub:
+  - var: box_image_src
+  - var: box_title
+  - var: box_subtitle
+  - var: box_md
+  - name: tags
+    label: Etiquetas
+    widget: list
+    sub:
+    - name: icon
+      label: Icono
+      widget: select
+      options:
+      - label: Fecha
+        value: calendar_today
+      - label: Ubicación
+        value: place
+      - label: Dinero
+        value: monetization_on
+      - label: Persona
+        value: person
+      - label: Enlace
+        value: link
+      - label: Tipo
+        value: sell
+    - var: box_tags_label
+
+# - types: [ single ]
+#   pages: [ _home ]
+#   name: noticias
+#   label: Noticias
+#   widget: list
+#   sub:
+#   - var: box_image_src
+#   - var: box_title
+#   - var: box_md
+#   - var: box_button_link
+#   - name: tags
+#     label: Etiquetas
+#     widget: list
+#     sub:
+#     - var: box_icon_id
+#       default: calendar
+#     - var: box_tags_label

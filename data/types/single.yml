@@ -1,46 +1,20 @@
 title: Únicas
-order: 0
+weight: 0
 base: single
-
 tpl:
   bg:
     color: dark
   menu:
-    logo: true
+    logo: y
     sticky: auto
-    size: ''
-    show_sections: true
-    show_modals: true
+    size: lg
+    auto: same-modals
     color: dark
-    image: logo-um.svg
-    title: ''
-    subtitle: ''
-  callnow:
-    show: auto
+  callnow: auto
   section:
   - size: lg
-    alpha: .7
+    alpha: 0.7
     div: wavy-jump
-    div_x: false
+    div_x: n
   - color: white
-    div_x: true
-
-params:
-
-- name: noticias
-  label: Noticias
-  widget: list
-  pages:
-  - _index
-  params:
-  - var: BOX_IMAGE_SRC
-  - var: BOX_TITLE
-  - var: BOX_MD
-  - var: BOX_BUTTON_LINK
-  - name: tags
-    label: Etiquetas
-    widget: list
-    params:
-    - var: BOX_ICON_ID
-      default: calendar
-    - var: BOX_TAGS_LABEL
+    div_x: y

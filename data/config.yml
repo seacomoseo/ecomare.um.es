@@ -1,10 +1,4 @@
-langs:
-- lang: es
-  title: Ecomare
-  description: ''
-  google_analytics: G-F1DT0ZTK3T
-  # main_org: /ecomare/
-cms:
-  logo: base/icon.png
-others:
-  show: true
+google_analytics: G-F1DT0ZTK3T
+cms_logo: base/icon.png
+cookies_advanced: y
+show: y

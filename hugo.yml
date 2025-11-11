@@ -1,6 +1,6 @@
 # baseURL: https://www.um.es/ecomare/
 baseURL: https://www.um.es/
-buildFuture: true
+buildFuture: y
 theme: [sansoul]
 params:
   domain: um.es
