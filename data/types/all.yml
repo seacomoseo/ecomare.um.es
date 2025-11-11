@@ -6,7 +6,6 @@ tpl:
     logo: y
     logo_align: center
     transparent: y
-    size: sm
     hide_icons: y
   section:
   - size: sm

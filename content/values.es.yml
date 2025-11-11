@@ -4,16 +4,17 @@ menu:
   # subtitle: Ecología y Conservación Marina
   items:
   - label: Noticias
-    link: /#noticias
+    link: /ecomare/#noticias
   - label: Acerca del grupo
-    link: /#grupo
+    link: /ecomare/#grupo
   - label: Proyectos
-    link: /#proyectos
+    link: /ecomare/#proyectos
   - label: Contratos
-    link: /#contratos
+    link: /ecomare/#contratos
   - label: Publicaciones
-    link: /#publicaciones
+    link: /ecomare/#publicaciones
 footer:
+  div: wavy-jump
   md: |
     [![Universidad de Murcia](logo-um.svg)](/)
 

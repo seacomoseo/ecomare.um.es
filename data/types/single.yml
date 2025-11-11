@@ -7,8 +7,6 @@ tpl:
   menu:
     logo: y
     sticky: auto
-    size: lg
-    auto: same-modals
     color: dark
   callnow: auto
   section:
