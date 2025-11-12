@@ -17,19 +17,60 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '23.5.0'
-          cache: 'npm'
+          # Cache sólo si hay lockfile (lo activamos más abajo con cache-dependency-path según exista)
 
-      - name: Install Node deps (root, si existe)
+      # ====== Instalación dependencias en la RAÍZ ======
+      - name: Detect lockfile (root)
+        id: lock_root
         run: |
-          if [ -f package-lock.json ]; then
-            npm ci
+          if [ -f package-lock.json ]; then echo "type=npm" >> $GITHUB_OUTPUT; echo "lock=package-lock.json" >> $GITHUB_OUTPUT; exit 0; fi
+          if [ -f yarn.lock ]; then echo "type=yarn" >> $GITHUB_OUTPUT; echo "lock=yarn.lock" >> $GITHUB_OUTPUT; exit 0; fi
+          if [ -f pnpm-lock.yaml ]; then echo "type=pnpm" >> $GITHUB_OUTPUT; echo "lock=pnpm-lock.yaml" >> $GITHUB_OUTPUT; exit 0; fi
+          echo "type=none" >> $GITHUB_OUTPUT; echo "lock=" >> $GITHUB_OUTPUT
+
+      - name: Enable cache (root)
+        if: steps.lock_root.outputs.type != 'none'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: ${{ steps.lock_root.outputs.type }}
+          cache-dependency-path: ${{ steps.lock_root.outputs.lock }}
+
+      - name: Install deps (root)
+        run: |
+          if [ -f package.json ]; then
+            if [ -f package-lock.json ]; then npm ci; \
+            elif [ -f yarn.lock ]; then yarn install --frozen-lockfile; \
+            elif [ -f pnpm-lock.yaml ]; then corepack enable && pnpm i --frozen-lockfile; \
+            else npm install --no-audit --no-fund; fi
           fi
 
-      - name: Install Node deps (tema sansoul, si existe)
+      # ====== Instalación dependencias en el TEMA ======
+      - name: Detect lockfile (theme)
+        id: lock_theme
         working-directory: themes/sansoul
         run: |
-          if [ -f package-lock.json ]; then
-            npm ci
+          if [ -f package-lock.json ]; then echo "type=npm" >> $GITHUB_OUTPUT; echo "lock=themes/sansoul/package-lock.json" >> $GITHUB_OUTPUT; exit 0; fi
+          if [ -f yarn.lock ]; then echo "type=yarn" >> $GITHUB_OUTPUT; echo "lock=themes/sansoul/yarn.lock" >> $GITHUB_OUTPUT; exit 0; fi
+          if [ -f pnpm-lock.yaml ]; then echo "type=pnpm" >> $GITHUB_OUTPUT; echo "lock=themes/sansoul/pnpm-lock.yaml" >> $GITHUB_OUTPUT; exit 0; fi
+          echo "type=none" >> $GITHUB_OUTPUT; echo "lock=" >> $GITHUB_OUTPUT
+
+      - name: Enable cache (theme)
+        if: steps.lock_theme.outputs.type != 'none'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: ${{ steps.lock_theme.outputs.type }}
+          cache-dependency-path: ${{ steps.lock_theme.outputs.lock }}
+
+      - name: Install deps (theme)
+        working-directory: themes/sansoul
+        run: |
+          if [ -f package.json ]; then
+            if [ -f package-lock.json ]; then npm ci; \
+            elif [ -f yarn.lock ]; then yarn install --frozen-lockfile; \
+            elif [ -f pnpm-lock.yaml ]; then corepack enable && pnpm i --frozen-lockfile; \
+            else npm install --no-audit --no-fund; fi
           fi
 
       - name: Set up Hugo
@@ -51,4 +92,4 @@ jobs:
           sftp_only: true
           local_path: './public/'
           remote_path: '/home/sp-dgroup/a1/www.um.es/ecomare'
-          sftpArgs: '-o ConnectTimeout=10'
+          sftpArgs: '-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10'
