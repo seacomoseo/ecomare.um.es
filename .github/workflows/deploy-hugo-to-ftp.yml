@@ -92,6 +92,6 @@ jobs:
           mirror -R --delete --verbose \
             --exclude-glob ".htaccess" \
             --exclude-glob "*/.htaccess" \
-            ./public /home/sp-dgroup/a1/***/***
+            ./public /home/sp-dgroup/a1/www.um.es/ecomare
           bye
           EOF
