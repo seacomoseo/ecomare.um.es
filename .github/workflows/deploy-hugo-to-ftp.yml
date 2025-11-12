@@ -82,29 +82,13 @@ jobs:
       - name: Build
         run: sh do hugo
         
-      - name: Inspect build output
-        run: |
-          du -sh public || true
-          find public -type f | wc -l
-          # Muestra algunos ejemplos
-          find public -type f | head -n 50
-
-      - name: Deploy via SFTP (password)
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+      - name: Deploy via SCP (password)
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
-          sftp_only: true
-          local_path: './public/'
-          remote_path: '/home/sp-dgroup/a1/www.um.es/ecomare'
-          delete_remote_files: true
-          sftpArgs: '-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10'
-
-      - name: List remote (SFTP)
-        run: |
-          sudo apt-get update && sudo apt-get install -y sshpass
-          sshpass -p "${{ secrets.FTP_PASSWORD }}" sftp -o StrictHostKeyChecking=no -P 22 ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }} << 'EOF'
-          ls -lR /home/sp-dgroup/a1/www.um.es/ecomare    # ajusta la ruta
-          EOF
+          source: "public/*"
+          target: "/home/sp-dgroup/a1/www.um.es/ecomare"
+          overwrite: true
