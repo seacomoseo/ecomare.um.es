@@ -2,7 +2,7 @@ baseURL: https://www.um.es/ecomare
 buildFuture: y
 theme: [sansoul]
 params:
-  domain: um.es
+  domain: ecomare.um.es
   name: ecomare
   netlify_id: ''
   netlify_hook: ''
