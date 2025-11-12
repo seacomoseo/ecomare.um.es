@@ -99,7 +99,6 @@ jobs:
           sftp_only: true
           local_path: './public/*'
           remote_path: '/home/sp-dgroup/a1/www.um.es/ecomare'
-          delete_remote_files: true
           sftpArgs: '-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10'
 
       - name: List remote (SFTP)
