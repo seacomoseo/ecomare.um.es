@@ -82,7 +82,7 @@ jobs:
       - name: Build
         run: sh do hugo
 
-      - name: Deploy via lftp (SFTP mirror --delete)
+      - name: Deploy via lftp (SFTP mirror --delete, keep .htaccess)
         run: |
           sudo apt-get update && sudo apt-get install -y lftp
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" sftp://${{ secrets.FTP_SERVER }} << 'EOF'
@@ -90,6 +90,8 @@ jobs:
           set net:max-retries 2
           set net:timeout 20
           mirror -R --delete --verbose \
-            ./public /home/sp-dgroup/a1/www.um.es/ecomare
+            --exclude-glob ".htaccess" \
+            --exclude-glob "*/.htaccess" \
+            ./public /home/sp-dgroup/a1/***/***
           bye
           EOF
