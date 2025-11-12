@@ -105,5 +105,5 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y sshpass
           sshpass -p "${{ secrets.FTP_PASSWORD }}" sftp -o StrictHostKeyChecking=no -P 22 ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }} << 'EOF'
-          ls -lR /home/sp-dgroup/a1/***/***    # ajusta la ruta
+          ls -lR /home/sp-dgroup/a1www.um.es/ecomare    # ajusta la ruta
           EOF
