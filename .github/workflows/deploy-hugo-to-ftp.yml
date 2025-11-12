@@ -7,14 +7,38 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Si usas submódulos (themes como submodule), actívalo:
+          submodules: true
+          fetch-depth: 0
+
+      # Solo si usas Hugo Modules (go.mod en la raíz). Inofensivo si no.
+      - name: Set up Go (for Hugo Modules)
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22.x'
 
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.149.0'
           extended: true
+
+      # Diagnóstico: confirmar que Hugo y Go existen
+      - name: Show versions
+        run: |
+          which hugo && hugo version
+          which go || echo "Go no está (si no usas Hugo Modules, no pasa nada)."
+
+      # Si usas PostCSS/Autoprefixer, instala Node deps (ignorado si no hay package.json)
+      - name: Install Node deps (optional)
+        if: hashFiles('package-lock.json') != '' || hashFiles('yarn.lock') != '' || hashFiles('pnpm-lock.yaml') != ''
+        run: |
+          if [ -f package-lock.json ]; then npm ci; elif [ -f yarn.lock ]; then yarn install --frozen-lockfile; elif [ -f pnpm-lock.yaml ]; then corepack enable && pnpm i --frozen-lockfile; fi
 
       - name: Build
         run: sh do hugo
@@ -26,6 +50,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
+          # Ajusta si tu hosting usa otro puerto FTPS, p.ej. 21/990
+          # port: 21
           local-dir: ./public/
           server-dir: /
           exclude: |
