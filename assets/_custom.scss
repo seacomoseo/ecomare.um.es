@@ -4,14 +4,19 @@
 }
 #body-home #header {
   overflow: hidden;
-  .box--1 .image      { @include show-from(0); --show-from: scale(3); }
+  .box--1 .img        { @include show-from(0); --show-from: scale(3); }
   .box--1 .box__title { @include show-from(1); }
   .box--1 .md p       { @include show-from(2); }
   .box--2             { @include show-from(3); }
 }
 #noticias {
   max-width: 328px;
+  .box__md,
   iframe {
-    height: 512px;
+    height: var(--noticias-height, 512px);
+    max-height: 1079px;
+  }
+  @media (min-width: $viewport-lg) {
+    --noticias-height: 100%;
   }
 }

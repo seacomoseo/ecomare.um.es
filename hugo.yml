@@ -7,5 +7,5 @@ params:
   netlify_id: ''
   netlify_hook: ''
   cloudflare_id: YmY5ZTdjNDM1NzMxYjI2YTg3ZGYyZWI1YjEwYWNmNmMK
-  drive_link: https://drive.google.com/file/d/1LcmrsLn8-FdqjLkaQP8Qox_Vj6W2IeRd
+  drive_url: https://drive.google.com/file/d/1LcmrsLn8-FdqjLkaQP8Qox_Vj6W2IeRd
   drive_mails: saraypilchardus@gmail.com

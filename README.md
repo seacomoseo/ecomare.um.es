@@ -1,6 +1,6 @@
 # ecomare.um.es
 
-[![ecomare.um.es](/assets/media/base/icon.png)](https://ecomare.um.es/)
+[![ecomare.um.es](/uploads/base/icon.png)](https://ecomare.um.es/)
 
 
 ## STEPS

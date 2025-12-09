@@ -3,67 +3,58 @@
   pages: [ _home ]
   name: header
   label: Cabecera
-  widget: object
+  widget: dict
   sub:
-  - var: box_image_src
-  - var: box_title
-  - var: box_md
+  - var: img
+  - var: title
+  - var: md
 
 - types: [ single ]
   pages: [ _home ]
   name: mision
   label: Misión
-  widget: object
+  widget: dict
   sub:
-  - var: box_title
-  - var: box_md
+  - var: title
+  - var: md
 
-- types: [ single ]
-  pages: [ _home ]
-  name: grupo
+- name: grupo
   label: Grupo
-  widget: object
+  widget: dict
   sub:
   - name: actuales
-    label: Actuales Destacados
+    label: Actuales
     widget: list
     sub:
-    - var: box_image_src
-    - var: box_title
-    - var: box_subtitle
-    - var: box_md
-  - name: actuales_simples
-    label: Actuales Simples
-    widget: list
-    sub:
-    - var: box_title
-    - var: box_subtitle
-    - var: box_md
+    - var: img
+    - var: title
+    - var: sub
+    - var: md
   - name: visitantes
     label: Visitantes
     widget: list
     sub:
-    - var: box_title
-    - var: box_subtitle
-    - var: box_md
+    - var: img
+    - var: title
+    - var: sub
+    - var: md
   - name: anteriores
     label: Anteriores
     widget: list
     sub:
-    - var: box_title
-    - var: box_subtitle
-    - var: box_md
+    - var: img
+    - var: title
+    - var: sub
+    - var: md
 
-- types: [ single ]
-  pages: [ _home ]
-  name: proyectos
+- name: proyectos
   label: Proyectos
   widget: list
   sub:
-  - var: box_image_src
-  - var: box_title
-  - var: box_subtitle
-  - var: box_md
+  - var: img
+  - var: title
+  - var: sub
+  - var: md
   - name: tags
     label: Etiquetas
     widget: list
@@ -71,7 +62,7 @@
     - name: icon
       label: Icono
       widget: select
-      options:
+      opts:
       - label: Fecha
         value: calendar_today
       - label: Ubicación
@@ -84,18 +75,16 @@
         value: link
       - label: Tipo
         value: sell
-    - var: box_tags_label
+    - var: tags_label
 
-- types: [ single ]
-  pages: [ _home ]
-  name: contratos
+- name: contratos
   label: Contratos
   widget: list
   sub:
-  - var: box_image_src
-  - var: box_title
-  - var: box_subtitle
-  - var: box_md
+  - var: img
+  - var: title
+  - var: sub
+  - var: md
   - name: tags
     label: Etiquetas
     widget: list
@@ -103,7 +92,7 @@
     - name: icon
       label: Icono
       widget: select
-      options:
+      opts:
       - label: Fecha
         value: calendar_today
       - label: Ubicación
@@ -116,54 +105,106 @@
         value: link
       - label: Tipo
         value: sell
-    - var: box_tags_label
+    - var: tags_label
 
-- types: [ single ]
-  pages: [ _home ]
-  name: publicaciones
-  label: Publicaciones
-  widget: list
+- name: tesis
+  label: Tesis
+  widget: dict
   sub:
-  - var: box_image_src
-  - var: box_title
-  - var: box_subtitle
-  - var: box_md
-  - name: tags
-    label: Etiquetas
+  - name: doctorales
+    label: Tesis Doctorales
     widget: list
     sub:
-    - name: icon
-      label: Icono
-      widget: select
-      options:
-      - label: Fecha
-        value: calendar_today
-      - label: Ubicación
-        value: place
-      - label: Dinero
-        value: monetization_on
-      - label: Persona
-        value: person
-      - label: Enlace
-        value: link
-      - label: Tipo
-        value: sell
-    - var: box_tags_label
+    - var: img
+    - var: title
+    - var: sub
+    - var: md
+    - name: tags
+      label: Etiquetas
+      widget: list
+      sub:
+      - name: icon
+        label: Icono
+        widget: select
+        opts:
+        - label: Fecha
+          value: calendar_today
+        - label: Ubicación
+          value: place
+        - label: Dinero
+          value: monetization_on
+        - label: Persona
+          value: person
+        - label: Enlace
+          value: link
+      - var: tags_label
+  - name: tfm
+    label: TFM/DEA
+    widget: list
+    sub:
+    - var: img
+    - var: title
+    - var: sub
+    - var: md
+    - name: tags
+      label: Etiquetas
+      widget: list
+      sub:
+      - name: icon
+        label: Icono
+        widget: select
+        opts:
+        - label: Fecha
+          value: calendar_today
+        - label: Ubicación
+          value: place
+        - label: Dinero
+          value: monetization_on
+        - label: Persona
+          value: person
+        - label: Enlace
+          value: link
+      - var: tags_label
+  - name: tfg
+    label: TFG/PFC
+    widget: list
+    sub:
+    - var: img
+    - var: title
+    - var: sub
+    - var: md
+    - name: tags
+      label: Etiquetas
+      widget: list
+      sub:
+      - name: icon
+        label: Icono
+        widget: select
+        opts:
+        - label: Fecha
+          value: calendar_today
+        - label: Ubicación
+          value: place
+        - label: Dinero
+          value: monetization_on
+        - label: Persona
+          value: person
+        - label: Enlace
+          value: link
+      - var: tags_label
 
-# - types: [ single ]
-#   pages: [ _home ]
-#   name: noticias
+# - name: noticias
 #   label: Noticias
 #   widget: list
 #   sub:
-#   - var: box_image_src
-#   - var: box_title
-#   - var: box_md
-#   - var: box_button_link
+#   - var: img
+#   - var: title
+#   - var: md
+#   - var: url
 #   - name: tags
 #     label: Etiquetas
 #     widget: list
 #     sub:
-#     - var: box_icon_id
-#       default: calendar
-#     - var: box_tags_label
+#     - var: icon
+#       def: calendar
+#     - var: tags_label

@@ -1,24 +1,25 @@
 name: Cabecera
-bi: fondo.jpg
-parallax: fix
-box:
-  cols: 2
-  gap: 5
-  gap_vs: 2
-  align_y: center
+bi: /u/fondo.jpg
+scroll: fix
 boxes:
-- hs: 2
-  params:
-  - from: header.image
-    to: image
-  - from: header.title
-    to: title
-  - from: header.md
-    to: md
-- align: left
-  hs: 4
-  params:
-  - from: mision.title
-    to: title
-  - from: mision.md
-    to: md
+- box:
+    cols: 2
+    gap: 5
+    gap_vs: 2
+    align_y: center
+  boxes:
+  - hs: 2
+    get:
+    - from: header.img
+      to: img
+    - from: header.title
+      to: title
+    - from: header.md
+      to: md
+  - align: left
+    hs: 4
+    get:
+    - from: mision.title
+      to: title
+    - from: mision.md
+      to: md

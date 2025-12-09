@@ -4,8 +4,9 @@ icons:
   grade: 0
   optical: 24
   style: outlined
-  play: svg:youtube-iframe
-  up: stat_2
+  defs:
+    play: svg:youtube-iframe
+    up: stat_2
 fonts:
   base:
     family: IBM Plex Sans
@@ -20,7 +21,6 @@ fonts:
     italic: y
     line_height: 1.25
     size: 1
-    top: 0
   title:
     family: IBM Plex Sans
     weight: 700
@@ -28,14 +28,13 @@ fonts:
     italic: n
     line_height: 1.25
     size: 1
-    top: 0
   blockquote_cursive: y
 colors:
   main:
     color: '#4461e1' #005164 #8d1300
     light: '#ffffff'
     dark: '#ffffff'
-    contrast:
+    turn:
       fill: n
       in: y
       text: y
@@ -43,7 +42,7 @@ colors:
     color: '#ffffff'
     light: '#ffffff'
     dark: '#ffffff'
-    contrast:
+    turn:
       fill: y
       in: y
       text: n
@@ -51,7 +50,7 @@ colors:
     color: '#ffffff'
     light: '#ffffff'
     dark: '#ffffff'
-    contrast:
+    turn:
       fill: n
       in: y
       text: y
@@ -64,9 +63,9 @@ colors:
 rounded:
   radius: 0.25
   chamfer: n
-buttons:
-  sides_round: n
-  dot_circle: n
+btns:
+  pill: n
+  disc: n
   deep: n
   outline: n
   font:
@@ -79,7 +78,7 @@ buttons:
     caps: n
 inputs:
   fill: n
-  labels_out: n
+  labels: in
 shadow:
   left: 0.15
   top: 0.15

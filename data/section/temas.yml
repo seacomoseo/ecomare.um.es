@@ -1,15 +1,13 @@
 name: Temas
-box:
-  cols: 2
-  gap: 5
-  gap_vs: 2
 boxes:
-- id: noticias
-  title: Noticias
-  box:
-    gap: 1
+- box:
+    cols: 2
+    gap: 5
+    gap_vs: 2
   boxes:
-  - md: |
+  - id: noticias
+    title: Noticias
+    md: |
       <iframe
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMECResearch&tabs=timeline&width=328&height=1080&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
         width="498"
@@ -20,33 +18,34 @@ boxes:
         allowfullscreen="true"
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
       ></iframe>
-- title: Secciones
-  box:
-    cols: 2
-    card: y
-    rate: 1
-    pd: 0.5
-  boxes:
-  - label: Grupo
-    link: '#grupo'
-    image: grupo.webp
-  - label: Proyectos
-    link: '#proyectos'
-    image: proyectos.webp
-  - label: Contratos
-    link: '#contratos'
-    image: contratos.webp
-  - label: Publicaciones
-    link: '#publicaciones'
-    image: publicaciones.webp
-
+  - title: Secciones
+    box:
+      cols: 2
+      card: y
+      rate: 1
+      pd: 0.5
+    boxes:
+    - label: Grupo
+      url: '#grupo'
+      img: /u/grupo.webp
+    - label: Proyectos
+      url: '#proyectos'
+      img: /u/proyectos.webp
+    - label: Contratos
+      url: '#contratos'
+      img: /u/contratos.webp
+    - label: Publicaciones
+      url: https://portalinvestigacion.um.es/grupos/31934/publicaciones
+      img: /u/publicaciones.webp
+    - label: Tesis
+      url: '#tesis'
+      img: /u/tesis.webp
 modal:
   size: lg
 modals:
-
 - id: grupo
   title: Acerca del grupo
-  subtitle: Miembros
+  sub: Miembros
   box:
     gap_vs: 2
   boxes:
@@ -58,15 +57,8 @@ modals:
         inset: y
         ratio: 1
         hs: 5
-      params:
+      get:
       - from: grupo.actuales
-        to: boxes
-    - box:
-        cols: 3
-        color: white
-        hs: 6
-      params:
-      - from: grupo.actuales_simples
         to: boxes
   - boxes:
     - title: Visitantes
@@ -76,7 +68,7 @@ modals:
         inset: y
         ratio: 1
         hs: 5
-      params:
+      get:
       - from: grupo.visitantes
         to: boxes
   - boxes:
@@ -87,10 +79,9 @@ modals:
         inset: y
         ratio: 1
         hs: 5
-      params:
+      get:
       - from: grupo.anteriores
         to: boxes
-
 - id: proyectos
   title: Proyectos
   md: '[[Financiaciones]](https://portalinvestigacion.um.es/financiaciones?grupoId=31934)'
@@ -102,13 +93,12 @@ modals:
     ratio: 16/9
     hs: 5
     label: Ver más
-  params:
+  get:
   - from: proyectos
     to: boxes
-
 - id: contratos
   title: Contratos
-  subtitle: con empresas y administraciones
+  sub: con empresas y administraciones
   box:
     cols: 3
     color: white
@@ -117,14 +107,29 @@ modals:
     ratio: 1/1
     hs: 5
     label: Ver más
-  params:
+  get:
   - from: contratos
     to: boxes
-
-- id: publicaciones
-  title: Publicaciones
-  subtitle: Tesis doctorales, de máster y trabajos fin de carrera dirigidos
-  md: '[[Ver Publicaciones]](https://portalinvestigacion.um.es/grupos/31934/publicaciones)'
+- id: tesis
+  size: sm
+  title: Tesis
+  box:
+    cols: 3
+    card: y
+    rate: 1
+    pd: 0.5
+  boxes:
+  - label: Doctorales
+    url: '#tesis-doctorales'
+    img: /u/tesis-doctorales.webp
+  - label: TFM/DEA
+    url: '#tfm'
+    img: /u/tfm.webp
+  - label: TFG/PFC
+    url: '#tfg'
+    img: /u/tfg.webp
+- id: tesis-doctorales
+  title: Tesis Doctorales
   box:
     cols: 3
     color: white
@@ -133,6 +138,32 @@ modals:
     ratio: 1/1
     hs: 5
     label: Ver más
-  params:
-  - from: publicaciones
+  get:
+  - from: tesis.doctorales
+    to: boxes
+- id: tfm
+  title: TFM/DEA
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 1/1
+    hs: 5
+    label: Ver más
+  get:
+  - from: tesis.tfm
+    to: boxes
+- id: tfg
+  title: TFG/PFC
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 1/1
+    hs: 5
+    label: Ver más
+  get:
+  - from: tesis.tfg
     to: boxes
