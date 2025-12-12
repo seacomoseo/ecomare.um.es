@@ -18,38 +18,68 @@
   - var: title
   - var: md
 
-- name: grupo
-  label: Grupo
-  widget: dict
+- types: [ single ]
+  pages: [ grupo ]
+  name: actuales
+  label: Actuales
+  widget: slice
   sub:
-  - name: actuales
-    label: Actuales
-    widget: list
+  - var: img
+  - var: title
+  - var: sub
+  - name: md
+    label: Email / Teléfono
+  - name: faqs
+    label: Detalles
+    widget: slice
     sub:
-    - var: img
-    - var: title
-    - var: sub
-    - var: md
-  - name: visitantes
-    label: Visitantes
-    widget: list
-    sub:
-    - var: img
-    - var: title
-    - var: sub
-    - var: md
-  - name: anteriores
-    label: Anteriores
-    widget: list
-    sub:
-    - var: img
-    - var: title
-    - var: sub
+    - name: title
+      def: Detalles
     - var: md
 
-- name: proyectos
+- types: [ single ]
+  pages: [ grupo ]
+  name: visitantes
+  label: Visitantes
+  widget: slice
+  sub:
+  - var: img
+  - var: title
+  - var: sub
+  - name: md
+    label: Email / Teléfono
+  - name: faqs
+    label: Detalles
+    widget: slice
+    sub:
+    - name: title
+      def: Detalles
+    - var: md
+
+- types: [ single ]
+  pages: [ grupo ]
+  name: anteriores
+  label: Anteriores
+  widget: slice
+  sub:
+  - var: img
+  - var: title
+  - var: sub
+  - name: md
+    label: Email / Teléfono
+  - name: faqs
+    label: Detalles
+    widget: slice
+    sub:
+    - name: title
+      def: Detalles
+    - var: md
+
+- types: [ single ]
+  pages: [ proyectos ]
+  name: proyectos
   label: Proyectos
-  widget: list
+  widget: slice
   sub:
   - var: img
   - var: title
@@ -57,7 +87,7 @@
   - var: md
   - name: tags
     label: Etiquetas
-    widget: list
+    widget: slice
     sub:
     - name: icon
       label: Icono
@@ -77,9 +107,11 @@
         value: sell
     - var: tags_label
 
-- name: contratos
+- types: [ single ]
+  pages: [ contratos ]
+  name: contratos
   label: Contratos
-  widget: list
+  widget: slice
   sub:
   - var: img
   - var: title
@@ -87,7 +119,7 @@
   - var: md
   - name: tags
     label: Etiquetas
-    widget: list
+    widget: slice
     sub:
     - name: icon
       label: Icono
@@ -107,95 +139,99 @@
         value: sell
     - var: tags_label
 
-- name: tesis
-  label: Tesis
-  widget: dict
+- types: [ single ]
+  pages: [ tesis ]
+  name: doctorales
+  label: Tesis Doctorales
+  widget: slice
   sub:
-  - name: doctorales
-    label: Tesis Doctorales
-    widget: list
+  - var: img
+  - var: title
+  - var: sub
+  - var: md
+  - name: tags
+    label: Etiquetas
+    widget: slice
     sub:
-    - var: img
-    - var: title
-    - var: sub
-    - var: md
-    - name: tags
-      label: Etiquetas
-      widget: list
-      sub:
-      - name: icon
-        label: Icono
-        widget: select
-        opts:
-        - label: Fecha
-          value: calendar_today
-        - label: Ubicación
-          value: place
-        - label: Dinero
-          value: monetization_on
-        - label: Persona
-          value: person
-        - label: Enlace
-          value: link
-      - var: tags_label
-  - name: tfm
-    label: TFM/DEA
-    widget: list
+    - name: icon
+      label: Icono
+      widget: select
+      opts:
+      - label: Fecha
+        value: calendar_today
+      - label: Ubicación
+        value: place
+      - label: Dinero
+        value: monetization_on
+      - label: Persona
+        value: person
+      - label: Enlace
+        value: link
+    - var: tags_label
+
+- types: [ single ]
+  pages: [ tesis ]
+  name: tfm
+  label: TFM/DEA
+  widget: slice
+  sub:
+  - var: img
+  - var: title
+  - var: sub
+  - var: md
+  - name: tags
+    label: Etiquetas
+    widget: slice
     sub:
-    - var: img
-    - var: title
-    - var: sub
-    - var: md
-    - name: tags
-      label: Etiquetas
-      widget: list
-      sub:
-      - name: icon
-        label: Icono
-        widget: select
-        opts:
-        - label: Fecha
-          value: calendar_today
-        - label: Ubicación
-          value: place
-        - label: Dinero
-          value: monetization_on
-        - label: Persona
-          value: person
-        - label: Enlace
-          value: link
-      - var: tags_label
-  - name: tfg
-    label: TFG/PFC
-    widget: list
+    - name: icon
+      label: Icono
+      widget: select
+      opts:
+      - label: Fecha
+        value: calendar_today
+      - label: Ubicación
+        value: place
+      - label: Dinero
+        value: monetization_on
+      - label: Persona
+        value: person
+      - label: Enlace
+        value: link
+    - var: tags_label
+
+- types: [ single ]
+  pages: [ tesis ]
+  name: tfg
+  label: TFG/PFC
+  widget: slice
+  sub:
+  - var: img
+  - var: title
+  - var: sub
+  - var: md
+  - name: tags
+    label: Etiquetas
+    widget: slice
     sub:
-    - var: img
-    - var: title
-    - var: sub
-    - var: md
-    - name: tags
-      label: Etiquetas
-      widget: list
-      sub:
-      - name: icon
-        label: Icono
-        widget: select
-        opts:
-        - label: Fecha
-          value: calendar_today
-        - label: Ubicación
-          value: place
-        - label: Dinero
-          value: monetization_on
-        - label: Persona
-          value: person
-        - label: Enlace
-          value: link
-      - var: tags_label
+    - name: icon
+      label: Icono
+      widget: select
+      opts:
+      - label: Fecha
+        value: calendar_today
+      - label: Ubicación
+        value: place
+      - label: Dinero
+        value: monetization_on
+      - label: Persona
+        value: person
+      - label: Enlace
+        value: link
+    - var: tags_label
 
 # - name: noticias
 #   label: Noticias
-#   widget: list
+#   widget: slice
 #   sub:
 #   - var: img
 #   - var: title
@@ -203,7 +239,7 @@
 #   - var: url
 #   - name: tags
 #     label: Etiquetas
-#     widget: list
+#     widget: slice
 #     sub:
 #     - var: icon
 #       def: calendar

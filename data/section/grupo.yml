@@ -1,0 +1,43 @@
+name: Grupo
+boxes:
+- title: Acerca del grupo
+  sub: Miembros
+  box:
+    gap_vs: 2
+  boxes:
+  - boxes:
+    - title: Actuales
+    - box:
+        cols: 3
+        align_y: top
+        color: white
+        inset: y
+        ratio: 1
+        hs: 5
+      get:
+      - from: actuales
+        to: boxes
+  - boxes:
+    - title: Visitantes
+    - box:
+        cols: 3
+        align_y: top
+        color: white
+        inset: y
+        ratio: 1
+        hs: 5
+      get:
+      - from: visitantes
+        to: boxes
+  - boxes:
+    - title: Anteriores
+    - box:
+        cols: 3
+        align_y: top
+        color: white
+        inset: y
+        ratio: 1
+        hs: 5
+      get:
+      - from: anteriores
+        to: boxes

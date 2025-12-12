@@ -8,6 +8,8 @@ seo:
   desc: Te damos la bienvenida a ECOMARE, el grupo de investigación de José A. García Charton de la Facultad de Biología de la Universidad de Murcia (España).
 
 tpl:
+  menu:
+    clear: y
   sections:
   - file: _header
   - file: temas

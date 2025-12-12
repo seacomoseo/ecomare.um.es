@@ -1,0 +1,15 @@
+name: Proyectos
+boxes:
+- title: Proyectos
+  md: '[[Financiaciones]](https://portalinvestigacion.um.es/financiaciones?grupoId=31934)'
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 16/9
+    hs: 5
+    label: Ver más
+  get:
+  - from: proyectos
+    to: boxes

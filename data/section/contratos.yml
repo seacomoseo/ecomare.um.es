@@ -1,0 +1,15 @@
+name: Contratos
+boxes:
+- title: Contratos
+  sub: con empresas y administraciones
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 1/1
+    hs: 5
+    label: Ver más
+  get:
+  - from: contratos
+    to: boxes

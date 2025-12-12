@@ -1,0 +1,65 @@
+name: Tesis
+size: md
+boxes:
+- title: Tesis
+  box:
+    cols: 3
+    card: y
+    rate: 1
+    pd: 0.5
+  boxes:
+  - label: Doctorales
+    url: '#doctorales'
+    img: /u/tesis-doctorales.webp
+  - label: TFM/DEA
+    url: '#tfm'
+    img: /u/tfm.webp
+  - label: TFG/PFC
+    url: '#tfg'
+    img: /u/tfg.webp
+
+modal:
+  size: lg
+modals:
+
+- id: doctorales
+  title: Tesis Doctorales
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 1/1
+    hs: 5
+    label: Ver más
+  get:
+  - from: doctorales
+    to: boxes
+
+- id: tfm
+  title: TFM/DEA
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 1/1
+    hs: 5
+    label: Ver más
+  get:
+  - from: tfm
+    to: boxes
+
+- id: tfg
+  title: TFG/PFC
+  box:
+    cols: 3
+    color: white
+    alpha: 0.5
+    inset: y
+    ratio: 1/1
+    hs: 5
+    label: Ver más
+  get:
+  - from: tfg
+    to: boxes

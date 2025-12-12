@@ -20,3 +20,12 @@
     --noticias-height: 100%;
   }
 }
+#body-grupo #header {
+  .faq__btn {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .faq__icon {
+    display: none;
+  }
+}

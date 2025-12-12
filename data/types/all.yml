@@ -5,8 +5,9 @@ tpl:
   menu:
     logo: y
     logo_align: center
-    clear: y
+    logo_sticky: y
     hide_icons: y
+    color: dark
   section:
   - size: sm
   sections:

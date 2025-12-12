@@ -3,16 +3,14 @@ weight: 0
 base: single
 tpl:
   bg:
-    color: dark
+    color: light
   menu:
     logo: y
     sticky: auto
-    color: dark
   callnow: auto
   section:
   - size: lg
     alpha: 0.7
     div: wavy-jump
     div_x: n
-  - color: white
-    div_x: y
+  - div_x: y
