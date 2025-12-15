@@ -3,14 +3,15 @@ slug: proyectos
 title: Proyectos
 img: /u/proyectos.webp
 sum: Acerca de nuestros proyectos de investigación.
+
 tpl:
   sections:
   - file: proyectos
+
 proyectos:
-- img: https://estaticos-cdn.prensaiberica.es/clip/efa40b1f-f0fe-4222-94f7-317344ccc262_16-9-discover-aspect-ratio_default_0.jpg
-  title: Hábitat, distribución y movilidad de peces GUITARra y otros Elasmobranquios costeROs
+- title: Hábitat, distribución y movilidad de peces GUITARra y otros Elasmobranquios costeROs
   sub: GUITAR-HERO
-  md: |-
+  md: |
     Convocatoria 2023 Programa Pleamar - Fundación Biodiversidad
 
     [[Ver más]](https://www.programapleamar.es/proyectos/guitar-hero-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios)
@@ -19,13 +20,14 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2024-2026
+    label: '2024-2026'
   - icon: monetization_on
     label: 102 490,72 €
   - icon: person
     label: José A. García Charton
   - icon: link
     label: '[Financiación](https://portalinvestigacion.um.es/proyectos/866063/detalle)'
+  img: https://estaticos-cdn.prensaiberica.es/clip/efa40b1f-f0fe-4222-94f7-317344ccc262_16-9-discover-aspect-ratio_default_0.jpg
 - title: Ciencia ciudadana y participación en OGMAR+
   sub: CIPAO+
   md: ThinkInAzul - Plan Complementario de I+D+i en Ciencias Marinas - 2024
@@ -45,7 +47,7 @@ proyectos:
   - icon: place
     label: Universidade Federal do Sul de Bahía (Brasl)
   - icon: calendar_today
-    label: 2024-2025
+    label: '2024-2025'
   - icon: monetization_on
     label: 316 935,92 R$ (59 044,52 € a 29/12/2023)
   - icon: person
@@ -66,7 +68,7 @@ proyectos:
     label: José A. García Charton
 - title: Red de telemetría acústica y vigilancia ciudadana para los últimos tiburones guitarra del Mediterráneo occidental
   sub: GUITARPROTECT
-  md: |-
+  md: |
     ThinkInAzul - Plan Complementario de I+D+i en Ciencias Marinas - 2023
 
     [[::brand:instagram:: GuitarProtect]](https://www.instagram.com/project.guitarprotect/)
@@ -104,7 +106,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2023-2025
+    label: '2023-2025'
   - icon: monetization_on
     label: 106 700,00 €
   - icon: person
@@ -157,7 +159,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2019-2020
+    label: '2019-2020'
   - icon: monetization_on
     label: 15 000,00 €
   - icon: person
@@ -201,7 +203,7 @@ proyectos:
   - icon: monetization_on
     label: 50 000,00 €
   - icon: person
-    label: Pedro Noguera Méndez & María Semitiel García
+    label: 'Pedro Noguera Méndez & María Semitiel García'
   - icon: link
     label: '[Financiación](https://portalinvestigacion.um.es/proyectos/585393/detalle)'
 - title: Advancing marine conservation in the European and contiguous seas
@@ -251,4 +253,3 @@ proyectos:
   - icon: link
     label: '[Financiación](https://portalinvestigacion.um.es/proyectos/583966/detalle)'
 ---
-
