@@ -19,7 +19,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2024-2026
+    label: '2024-2026'
   - icon: monetization_on
     label: 102 490,72 €
   - icon: person
@@ -34,7 +34,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2025
+    label: '2025'
   - icon: monetization_on
     label: 22 100,00 €
   - icon: person
@@ -46,7 +46,7 @@ proyectos:
   - icon: place
     label: Universidade Federal do Sul de Bahía (Brasl)
   - icon: calendar_today
-    label: 2024-2025
+    label: '2024-2025'
   - icon: monetization_on
     label: 316 935,92 R$ (59 044,52 € a 29/12/2023)
   - icon: person
@@ -60,7 +60,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2024
+    label: '2024'
   - icon: monetization_on
     label: 17 250,00 €
   - icon: person
@@ -77,7 +77,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2024
+    label: '2024'
   - icon: monetization_on
     label: 29 942,00 €
   - icon: person
@@ -91,7 +91,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2024
+    label: '2024'
   - icon: monetization_on
     label: 34 000,00 €
   - icon: person
@@ -105,7 +105,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2023-2025
+    label: '2023-2025'
   - icon: monetization_on
     label: 106 700,00 €
   - icon: person
@@ -117,7 +117,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2023
+    label: '2023'
   - icon: monetization_on
     label: 36 000,00 €
   - icon: person
@@ -131,7 +131,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2022
+    label: '2022'
   - icon: monetization_on
     label: 18 148,79 €
   - icon: person
@@ -158,7 +158,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2019-2020
+    label: '2019-2020'
   - icon: monetization_on
     label: 15 000,00 €
   - icon: person
@@ -172,7 +172,7 @@ proyectos:
   - icon: place
     label: Universidad de Murcia
   - icon: calendar_today
-    label: 2019
+    label: '2019'
   - icon: monetization_on
     label: 18 148,79 €
   - icon: person

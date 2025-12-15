@@ -14,7 +14,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2024
+    label: '2024'
   - icon: monetization_on
     label: 37 000,00 €
   - icon: person
@@ -24,7 +24,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2023
+    label: '2023'
   - icon: monetization_on
     label: 45 000,00 €
   - icon: person
@@ -34,7 +34,7 @@ contratos:
   - icon: place
     label: Taxon SL
   - icon: calendar_today
-    label: 2022-2023
+    label: '2022-2023'
   - icon: person
     label: José Antonio García Charton
 - title: Estudios sobre las reservas marinas de Cabo de Palos-Islas Hormigas y Cabo Tiñoso
@@ -42,7 +42,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2022
+    label: '2022'
   - icon: monetization_on
     label: 45 000,00 €
   - icon: person
@@ -52,7 +52,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2020-2021
+    label: '2020-2021'
   - icon: monetization_on
     label: 45 000,00 €
   - icon: person
@@ -62,7 +62,7 @@ contratos:
   - icon: place
     label: Tragsatec - Contrato nº 67452
   - icon: calendar_today
-    label: 2020-2021
+    label: '2020-2021'
   - icon: monetization_on
     label: 55 000,00 €
   - icon: person
@@ -72,7 +72,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2020
+    label: '2020'
   - icon: monetization_on
     label: 17 939,46 €
   - icon: person
@@ -102,7 +102,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2018
+    label: '2018'
   - icon: monetization_on
     label: 22 000,00 €
   - icon: person
@@ -112,7 +112,7 @@ contratos:
   - icon: place
     label: WWF-España
   - icon: calendar_today
-    label: 2017-2018
+    label: '2017-2018'
   - icon: monetization_on
     label: 10 000,00 €
   - icon: person
@@ -122,7 +122,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2017
+    label: '2017'
   - icon: monetization_on
     label: 30 000,00 €
   - icon: person
@@ -132,7 +132,7 @@ contratos:
   - icon: place
     label: Ayuntamiento de Cartagena
   - icon: calendar_today
-    label: 2017
+    label: '2017'
   - icon: person
     label: Carmen Molina / Asociación Columbares
 - title: 'Asesoría técnica para el seguimiento de los arrecifes de Dendropoma lebeche (hábitat 1170): Cartografía y valoración del estado de las poblaciones en el litoral de Murcia'
@@ -140,7 +140,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2016-2019
+    label: '2016-2019'
   - icon: person
     label: 'Miguel Ángel Esteve Selma & José Antonio García Charton'
 - title: Estudios sobre la reserva marina de Cabo de Palos-Islas Hormigas
@@ -148,7 +148,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2016
+    label: '2016'
   - icon: monetization_on
     label: 30 000,00 €
   - icon: person
@@ -158,7 +158,7 @@ contratos:
   - icon: place
     label: UNEP/MAP - SAP BIO
   - icon: calendar_today
-    label: 2015
+    label: '2015'
   - icon: monetization_on
     label: 6 000,00 €
   - icon: person
@@ -168,7 +168,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2015
+    label: '2015'
   - icon: monetization_on
     label: 37 000,00 €
   - icon: person
@@ -178,7 +178,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2014
+    label: '2014'
   - icon: monetization_on
     label: 37 000,00 €
   - icon: person
@@ -188,7 +188,7 @@ contratos:
   - icon: place
     label: Comunidad Autónoma de la Región de Murcia
   - icon: calendar_today
-    label: 2012-2013
+    label: '2012-2013'
   - icon: monetization_on
     label: 37 000,00 €
   - icon: person
@@ -198,7 +198,7 @@ contratos:
   - icon: place
     label: UNEP/MAP - SAP BIO
   - icon: calendar_today
-    label: 2012
+    label: '2012'
   - icon: person
     label: RAC/SPA
 - title: Developement of Marine and Coastal Protected Areas (MPAs) in the Republic of Montenegro
@@ -206,7 +206,7 @@ contratos:
   - icon: place
     label: UNEP/MAP - SAP BIO
   - icon: calendar_today
-    label: 2012
+    label: '2012'
   - icon: person
     label: RAC/SPA
 ---
