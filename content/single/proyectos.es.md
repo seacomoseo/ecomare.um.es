@@ -7,6 +7,25 @@ tpl:
   sections:
   - file: proyectos
 proyectos:
+- img: /u/gh2.webp
+  title: Hábitat, distribución y movilidad de peces GUITARra y otros Elasmobranquios costeROs 2
+  sub: GUITAR-HERO 2
+  md: |-
+    Convocatoria 2025 Programa Pleamar - Fundación Biodiversidad
+
+    [[Ver más]](https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios)
+    [[::brand:instagram:: @project.guitarprotect]](https://www.instagram.com/project.guitarprotect/)
+  tags:
+  - icon: place
+    label: Universidad de Murcia
+  - icon: calendar_today
+    label: 2026-2027
+  - icon: monetization_on
+    label: 101 190,00 €
+  - icon: person
+    label: José A. García Charton
+  - icon: link
+    label: '[Financiación](https://portalinvestigacion.um.es/proyectos/1790822/detalle)'
 - img: https://estaticos-cdn.prensaiberica.es/clip/efa40b1f-f0fe-4222-94f7-317344ccc262_16-9-discover-aspect-ratio_default_0.jpg
   title: Hábitat, distribución y movilidad de peces GUITARra y otros Elasmobranquios costeROs
   sub: GUITAR-HERO
@@ -250,23 +269,4 @@ proyectos:
     label: José Antonio García Charton
   - icon: link
     label: '[Financiación](https://portalinvestigacion.um.es/proyectos/583966/detalle)'
-- img: /u/gh2.webp
-  title: Hábitat, distribución y movilidad de peces GUITARra y otros Elasmobranquios costeROs 2
-  sub: GUITAR-HERO 2
-  md: |-
-    Convocatoria 2025 Programa Pleamar - Fundación Biodiversidad
-
-    [[Ver más]](https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios)
-    [[::brand:instagram:: @project.guitarprotect]](https://www.instagram.com/project.guitarprotect/)
-  tags:
-  - icon: place
-    label: Universidad de Murcia
-  - icon: calendar_today
-    label: 2026-2027
-  - icon: monetization_on
-    label: 101 190,00 €
-  - icon: person
-    label: José A. García Charton
-  - icon: link
-    label: '[Financiación](https://portalinvestigacion.um.es/proyectos/1790822/detalle)'
 ---
