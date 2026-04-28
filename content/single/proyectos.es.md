@@ -253,5 +253,18 @@ proyectos:
 - img: /u/gh2.webp
   title: Hábitat, distribución y movilidad de peces GUITARra y otros Elasmobranquios costeROs 2
   sub: GUITAR-HERO 2
-  md: Convocatoria 2026 Programa Pleamar - Fundación Biodiversidad
+  md: |-
+    Convocatoria 2025 Programa Pleamar - Fundación Biodiversidad
+
+    [[](https://www.programapleamar.es/proyectos/guitar-hero-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios)[https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios](https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios "https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios")[]](https://www.programapleamar.es/proyectos/guitar-hero-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios)
+    [[::brand:instagram:: @project.guitarprotect]](https://www.instagram.com/project.guitarprotect/)
+  tags:
+  - icon: place
+    label: Universidad de Murcia
+  - icon: calendar_today
+    label: 2026-2027
+  - icon: monetization_on
+    label: 101 190,00 €
+  - icon: person
+    label: José A. García Charton
 ---
