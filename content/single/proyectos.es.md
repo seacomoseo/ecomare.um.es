@@ -256,7 +256,7 @@ proyectos:
   md: |-
     Convocatoria 2025 Programa Pleamar - Fundación Biodiversidad
 
-    [[](https://www.programapleamar.es/proyectos/guitar-hero-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios)[https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios](https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios "https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios")[]](https://www.programapleamar.es/proyectos/guitar-hero-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios)
+    [[Ver más]](https://www.programapleamar.es/proyectos/guitar-hero-2-habitat-distribucion-y-movilidad-de-peces-guitarra-y-otros-elasmobranquios)
     [[::brand:instagram:: @project.guitarprotect]](https://www.instagram.com/project.guitarprotect/)
   tags:
   - icon: place
@@ -267,4 +267,6 @@ proyectos:
     label: 101 190,00 €
   - icon: person
     label: José A. García Charton
+  - icon: link
+    label: '[Financiación](https://portalinvestigacion.um.es/proyectos/1790822/detalle)'
 ---
