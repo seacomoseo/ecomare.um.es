@@ -21,7 +21,7 @@ boxes:
   - title: Secciones
     box:
       cols: 2
-      card: y
+      card: true
       rate: 1
       pd: 0.5
     boxes:

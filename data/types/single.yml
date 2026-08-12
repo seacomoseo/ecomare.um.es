@@ -5,12 +5,12 @@ tpl:
   bg:
     color: light
   menu:
-    logo: y
+    logo: true
     sticky: auto
   callnow: auto
   section:
   - size: lg
     alpha: 0.7
     div: wavy-jump
-    div_x: n
-  - div_x: y
+    div_x: false
+  - div_x: true

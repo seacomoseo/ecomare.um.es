@@ -4,7 +4,7 @@ boxes:
 - title: Tesis
   box:
     cols: 3
-    card: y
+    card: true
     rate: 1
     pd: 0.5
   boxes:
@@ -28,7 +28,7 @@ modals:
     cols: 3
     color: white
     alpha: 0.5
-    inset: y
+    inset: true
     ratio: 1/1
     hs: 5
     label: Ver más
@@ -42,7 +42,7 @@ modals:
     cols: 3
     color: white
     alpha: 0.5
-    inset: y
+    inset: true
     ratio: 1/1
     hs: 5
     label: Ver más
@@ -56,7 +56,7 @@ modals:
     cols: 3
     color: white
     alpha: 0.5
-    inset: y
+    inset: true
     ratio: 1/1
     hs: 5
     label: Ver más

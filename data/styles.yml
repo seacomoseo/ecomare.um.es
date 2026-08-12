@@ -1,10 +1,10 @@
 icons:
-  fill: y
+  fill: true
   weight: 700
   grade: 0
   optical: 24
   style: outlined
-  defs:
+  def:
     play: svg:youtube-iframe
     up: stat_2
 fonts:
@@ -12,48 +12,48 @@ fonts:
     family: IBM Plex Sans
     weight: 400
     bold: 700
-    italic: n
+    italic: false
     line_height: 1.25
   cursive:
     family: IBM Plex Sans
     weight: 400
     bold: 0
-    italic: y
+    italic: true
     line_height: 1.25
     size: 1
   title:
     family: IBM Plex Sans
     weight: 700
     bold: 0
-    italic: n
+    italic: false
     line_height: 1.25
     size: 1
-  blockquote_cursive: y
+  blockquote_cursive: true
 colors:
   main:
     color: '#4461e1' #005164 #8d1300
     light: '#ffffff'
     dark: '#ffffff'
     turn:
-      fill: n
-      in: y
-      text: y
+      fill: false
+      in: true
+      text: true
   alt:
     color: '#ffffff'
     light: '#ffffff'
     dark: '#ffffff'
     turn:
-      fill: y
-      in: y
-      text: n
+      fill: true
+      in: true
+      text: false
   cta:
     color: '#ffffff'
     light: '#ffffff'
     dark: '#ffffff'
     turn:
-      fill: n
-      in: y
-      text: y
+      fill: false
+      in: true
+      text: true
   base:
     white: '#ffffff'
     light: '#eeeeee'
@@ -62,22 +62,22 @@ colors:
     black: '#000000'
 rounded:
   radius: 0.25
-  chamfer: n
+  chamfer: false
 btns:
-  pill: n
-  disc: n
-  deep: n
-  outline: n
+  pill: false
+  disc: false
+  deep: false
+  outline: false
   font:
     type: title
-    bold: n
-    caps: y
+    bold: false
+    caps: true
   swap:
     type: base
-    bold: n
-    caps: n
+    bold: false
+    caps: false
 inputs:
-  fill: n
+  fill: false
   labels: in
 shadow:
   left: 0.15

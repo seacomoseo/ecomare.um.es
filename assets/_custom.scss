@@ -1,8 +1,10 @@
-// Header 
+@use 'css/_variables' as variables;
+
+// Hero
 @mixin show-from($delay) {
   animation: show-from .5s (.5 + .25s * $delay) both;
 }
-#body-home #header {
+#body-home #hero {
   overflow: hidden;
   .box--1 .img        { @include show-from(0); --show-from: scale(3); }
   .box--1 .box__title { @include show-from(1); }
@@ -16,11 +18,11 @@
     height: var(--noticias-height, 512px);
     max-height: 1079px;
   }
-  @media (min-width: $viewport-lg) {
+  @media (min-width: variables.$viewport-lg) {
     --noticias-height: 100%;
   }
 }
-#body-grupo #header {
+#body-grupo #hero {
   .faq__btn {
     grid-template-columns: auto auto;
     justify-content: center;

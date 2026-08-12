@@ -9,9 +9,9 @@ seo:
 
 tpl:
   menu:
-    clear: y
+    clear: true
   sections:
-  - file: _header
+  - file: _hero
   - file: temas
 
 base: org
@@ -49,11 +49,11 @@ org:
   # - Online
   when:
   - days:
-      mon: y
-      tue: y
-      wed: y
-      thu: y
-      fri: y
+      mon: true
+      tue: true
+      wed: true
+      thu: true
+      fri: true
     # hours:
     # - open: 9:00
     #   close: 14:00

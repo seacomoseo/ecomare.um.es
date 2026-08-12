@@ -6,7 +6,7 @@ boxes:
     cols: 3
     color: white
     alpha: 0.5
-    inset: y
+    inset: true
     ratio: 1/1
     hs: 5
     label: Ver más

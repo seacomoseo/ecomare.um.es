@@ -1,7 +1,8 @@
 baseURL: https://www.um.es/ecomare/
-buildFuture: y
+buildFuture: true
 theme: [sansoul]
 params:
+  owner: seacomoseo
   domain: ecomare.um.es
   name: ecomare
   netlify_id: ''

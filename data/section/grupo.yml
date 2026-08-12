@@ -11,7 +11,7 @@ boxes:
         cols: 3
         align_y: top
         color: white
-        inset: y
+        inset: true
         ratio: 1
         hs: 5
       get:
@@ -23,7 +23,7 @@ boxes:
         cols: 3
         align_y: top
         color: white
-        inset: y
+        inset: true
         ratio: 1
         hs: 5
       get:
@@ -35,7 +35,7 @@ boxes:
         cols: 3
         align_y: top
         color: white
-        inset: y
+        inset: true
         ratio: 1
         hs: 5
       get:
