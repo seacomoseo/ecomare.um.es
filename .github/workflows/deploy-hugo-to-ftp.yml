@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node (LTS)
         uses: actions/setup-node@v4
         with:
-          node-version: '23.5.0'
+          node-version: '22.22.3'
           # Cache sólo si hay lockfile (lo activamos más abajo con cache-dependency-path según exista)
 
       # ====== Instalación dependencias en la RAÍZ ======
@@ -32,7 +32,7 @@ jobs:
         if: steps.lock_root.outputs.type != 'none'
         uses: actions/setup-node@v4
         with:
-          node-version: '23.5.0'
+          node-version: '22.22.3'
           cache: ${{ steps.lock_root.outputs.type }}
           cache-dependency-path: ${{ steps.lock_root.outputs.lock }}
 
@@ -76,7 +76,7 @@ jobs:
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.149.0'
+          hugo-version: '0.164.0'
           extended: true
 
       - name: Build
